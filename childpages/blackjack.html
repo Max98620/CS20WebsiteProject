@@ -3,13 +3,13 @@
     <meta charset="utf-8">
     <title>Menu</title>
   </head>
-  <body>
+  <body onload="main()">
     <button id="back" class="name"type="button" name="button">Max's Minigames</button>
     <div class="dropdown">
       <button class="button1">Menu</button>
       <div class="dropdown-content">
-        <a href="index.html">Home</a>
-        <a href="childpages/blackjack.html">BlackJack</a>
+        <a href="../index.html">Home</a>
+        <a href="childpages/Downloads.html">BlackJack</a>
         <a href="childpages/Help.html">Find the prize</a>
       </div>
     </div>
@@ -17,13 +17,16 @@
     <br><br>
     <section class="Big-Background">
     <section class="info">
-      <p>Welcome to Max's Minigames</p>
-      <p>Scroll down to see the rules of the different games</p>
-      <p>Select the Game you want to play from the "Menu" button above!</p>
-      <h3>Black Jack</h3>
-      <p>In order to win Black Jack, you have to get your cards to equal as close to 21 as you can, without going over!</p>
+      <h1>BlackJack</h1>
+      <select id="drop" class="Drop" name="place">
+        <option selected value="5">5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+      </select>
+      <button type="button" onclick="place()">Place Bet</button>
     </section>
     </section>
   </body>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../scripts/BlackJack.js"></script>
 </html>
